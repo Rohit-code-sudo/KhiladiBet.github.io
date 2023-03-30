@@ -1,0 +1,181 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: arial;
+}
+.landing-div{
+    background-image: url(bet.jpg);
+    height: 800px;
+    margin-top: 0px;
+    border: 1px solid #0000;
+    position: relative;
+}
+nav{
+    background: #e4ebf0;
+    width: 100%;
+    height: 100px;
+}
+@media(max-width:975px){
+    label.logo{
+        font-size: 30px;
+        padding: 30px;
+        width: 100%;
+        position: absolute;
+    }
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 10px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 60px;
+}
+nav ul li a{
+    color: rgb(182, 12, 12);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+.checkbtn{
+    display: block;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#check{
+    display: none !important;
+}
+@media(max-width:875px){
+    #checkbtn{
+        display: block;
+    }
+    ul{
+        position: none;
+        width: 100%;
+        height: 80vh;
+        background: rgb(5, 130, 139);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin:50px 0px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: rgb(209, 209, 223);
+    }
+    label.logo{
+        align-items: center;
+    }
+a:hover,a.active{
+    background: white;
+    color: black;
+}
+#check:checked~ul{
+    overflow: hidden;
+}
+}
+.content-container{
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+}
+.landing-content{
+    display: inline-block;
+    margin: 50px;
+    width: 20%;
+    height: 5%;
+    text-transform: uppercase;
+    color: #98faf3;
+    font-size: xx-large;
+    font-weight: bold;
+    overflow: hidden;
+    position: absolute;
+    animation: head 4s linear  infinite alternate ;
+}
+.subline{
+    position: absolute;
+    margin: 100px;
+    font-size: larger;
+    color: #98faf3;
+    animation: subline 2s linear .5s infinite alternate ;
+    overflow: hidden;
+    text-transform: uppercase;
+    text-indent: inherit;
+    width: 8%;
+}
+/* .landing-content h3{
+    position: absolute;
+    align-items: center;
+    color: silver;
+    font-size: xx-large;
+    width: 60%;
+} */
+@keyframes head {
+    0%{
+        width: 0%;
+    }
+    25%{
+        width: 10%;
+    }
+    50%{
+        width: 15%;
+    }
+    75%{
+        width: 20%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+@keyframes subline {
+    0%{ width: 0%;}
+    25%{width: 2%}
+    50%{width: 4%}
+    75%{width: 6%}
+    100%{width: 8%}
+}
+.btn1{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: rgb(12, 12, 12);
+    background-color: yellow;
+    font-size:25px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 20px;
+}
+.btn2{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    color: rgb(12, 12, 12);
+    background-color: rgb(71, 190, 246);
+    font-size:25px;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+.btn2:hover{
+    color: rgb(233, 233, 238);
+    background: transparent;
+}
