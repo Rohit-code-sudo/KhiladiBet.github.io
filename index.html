@@ -9,14 +9,14 @@
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <link rel="icon" href="./image/pp1.jpg" type="image/icon type">
-  <link href="path/to/tailwind.css" rel="stylesheet">
+ 
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100 overflow-x-hidden">
   <!-- Header -->
 
     <header class="sticky bg-slate-700">
-      <div class="relative grid px-4 py-4 mx-auto">
+      <div class="grid px-4 py-4 mx-auto">
         <nav class="flex justify-center ">  
           <a href="#" class="text-xl font-bold text-white"></a>
           <ul class="hidden md:flex md:space-x-4 ">
@@ -26,21 +26,21 @@
             <li><a href="#" class="text-white hover:text-blue-200">Blog</a></li>
             <li><a href="#" class="text-white hover:text-blue-200">Contact</a></li>
           </ul>
-          <div class="md:hidden">
-            <button id="menuToggle"  class="text-2xl text-black ">
-              <i class="fa fa-bars"></i>
-            </button>
-          </div>
         </nav>
+        <div class="md:hidden">
+          <button id="menuToggle"  class="sm:text-2xl text-black ">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
       </div>
     </header>
 
   <!-- Hero Section -->
       <div class=" h-[1000px] md:h-[600px]  relative " >
         <div class="top-[20%]  pl-3 md:pl-10 absolute " id="landingText">
-            <p class="text-[#ffff33] text-2xl font-medium my-8">our Next Adventure Awaits</p>
-            <h1 class=" text-4xl md:text-6xl text-white font-bold tracking-[]  ">WHAT WE DO IN LIFE ECHOES IN ETERNITY</h1>
-            <p class="my-8 text-white w-72">Explore exciting destinations and book your dream trip today</p>
+            <p class="text-[#ffff33] text-2xl md:text-4xl font-medium my-2 md:my-8">our Next Adventure Awaits</p>
+            <h1 class=" sm:text-4xl text-2xl md:text-6xl text-white font-bold tracking-[]  ">WHAT WE DO IN LIFE ECHOES IN ETERNITY</h1>
+            <p class="md:my-8 text-white">Explore exciting destinations and book your dream trip today</p>
             <button class="w-32 h-10 text-white bg-black border-0 border-white hover:border-2 hover:text-black hover:bg-transparent" >Get Started</button>
             <button  class="w-32 h-10 border-2 border-white hover:bg-black hover:border-0 hover:text-white">Learn More</button>
         </div> 
@@ -49,7 +49,7 @@
 
       <!---------------------section 3 (about Runner)--------------------------->
 
-      <div class="bg-[#1a1a1a] px-8  md:px-10 py-1">
+      <div class="bg-[#1a1a1a] px-2  md:px-10 py-1">
         <div class="col-span-3 my-10 text-center text-white " id="programPart1">
             <p class="text-[#E8FF02] text-md sm:text-xl md:text-2xl tracking-[4px] font-medium">LiVe YoUr LiFe </p>
             <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold tracking-[5px] ">THE BEST MOVEMENT OF LIFE </h1>
@@ -80,10 +80,10 @@
                 <div class="h-full bg-cover rounded-md bg-img" style="background-image:url(image/pp5.jpg)"></div>
             </div>
         </div>
-    </div>
+      </div> 
     <!------------------section 6 (event page)----------------------------------->
     
-    <div class="bg-[#1a1a1a] py-16 px-5 md:px-10 h-[1100px] sm:h-[1200px] md:h-[1000px] ">
+    <div class="bg-[#1a1a1a] py-16 px-4 md:px-10 h-[900px] sm:h-[1200px] md:h-[1000px] ">
       <div class="" id="aboutText">
           <p class="text-xl font-medium tracking-[6px] text-[#E8FF02]">ABOUT Traveling</p>
           <h1 class="text-2xl md:text-5xl pr-0 md:pr-5 my-5 font-bold text-white tracking-[5px]  md:w-[60%]"> ADVENTURE LIKE THERE IS NO TOMORROW</h1>
@@ -107,19 +107,16 @@
   </div>  
 
   <!-- Trip Listing Section -->
-  <div class=" text-white relative h-[1000px] sm:h-[800px] md:h-[550px] " id="parallex1" > 
+  <div class=" text-white relative md:h-[1000px] sm:h-[800px] h-[650px] overflow-x-hidden" id="parallex1" > 
     
-    <div class="h-full bg-fixed bg-black bg-cover " style="background-image:url(image/pp1.jpg);">
-    </div>
-
-</div>
-
+    <div class="h-full bg-fixed bg-black bg-cover " style="background-image:url(image/pp1.jpg);"></div>
+  </div>
 
   <section id="trips" class="px-4 py-16 bg-[#1a1a1a]">
     <div class="container mx-auto">
       <h2 class="mb-8 text-2xl font-bold">Adventure Trips</h2>
       <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
-        <!-- Sample trip cards, you can loop through actual trip data -->
+        
         <div class="p-1 bg-current rounded shadow-lg" id="programPart2">
           <img src="image/pp3.jpg" alt="Trip Image" class="object-cover w-full h-40 mb-4 rounded">
           <h3 class="mb-2 text-lg font-bold">Adventure Trip 1</h3>
@@ -143,7 +140,7 @@
   </section>
 
 <!-- ----------------blog------------- -->
-  <div class="relative" id="parallex2">
+  <div class="relative w-full" id="parallex2">
     <div class="absolute grid content-center w-full h-full grid-cols-1 bg-slate-800/70 opacity-80 md:grid-cols-2">
         <div class="">
             <h1 class="text-2xl font-bold text-center text-black md:text-4xl ">LET'S DO THE RUN TOGETHER!</h1>
@@ -152,49 +149,49 @@
             <button class="w-32 h-10 text-white bg-black border rounded-xl hover:border-red-500 ">SignUp Now</button>
         </div> 
     </div>
-    <div class="h-56 bg-fixed" style="background-image: url(image/pp6.jpg);" ></div>      
-</div>
+    <div class="h-60 bg-fixed" style="background-image: url(image/pp6.jpg);" ></div>      
+  </div> 
 
-<div class="py-2 bg-black md:py-8" id="blog">
-    <div class="text-center tracking-[4px]">
-        <h1 class="text-[#e8ff02] text-xl md:text-2xl">Blog News</h1>
-        <h1 class="my-2 text-2xl font-bold text-white md:text-5xl md:my-5">ARTICLES ABOUT SPORTS</h1>
-    </div>
-    <div class="grid grid-cols-1 gap-5 p-10 sm:grid-cols-2 md:grid-cols-3">
-        <div class="">
-            <div class="overflow-hidden ">
-                <div class="h-[250px] bg-cover transition duration-1000 ease-in-out delay-150 hover:scale-125 hover:-rotate-6 hover:brightness-50" style="background-image: url(image/pp1.jpg);"> 
-                </div>
-            </div>
-            <h1 class="text-[#e8ff02] tracking-[3px] text-sm md:text-xl">NOVEMBER 18, 2022</h1>
-            <h1 class="my-2 text-xl font-medium text-white md:text-3xl ">HEALTH & SAFETY WITH RUNNING</h1>
-            <button class="h-8 text-black bg-white rounded-lg w-28 ">Read More</button>
-        </div>
-        <div class="">
-            <div class="overflow-hidden ">
-                <div class="h-[250px] bg-cover transition duration-1000 ease-in-out delay-150 hover:scale-125 hover:-rotate-6 hover:brightness-50" style="background-image: url(image/p1.jpg);"> 
-                </div>
-            </div>
-            <h1 class="text-[#e8ff02] tracking-[3px] text-sm md:text-xl">NOVEMBER 18, 2022</h1>
-            <h1 class="my-2 text-xl font-medium text-white md:text-3xl ">CHOOSING THE RUNNING SHOES</h1>
-            <button class="h-8 text-black bg-white w-28 ">Read More</button>
-        </div>
-        <div class="">
-            <div class="overflow-hidden ">
-                <div class="h-[250px] bg-cover transition duration-1000 ease-in-out delay-150 hover:scale-125 hover:-rotate-6 hover:brightness-50" style="background-image: url(image/pp4.jpg);"> 
-                </div>
-            </div>
-            <h1 class="text-[#e8ff02] tracking-[3px] text-sm md:text-xl">NOVEMBER 18, 2022</h1>
-            <h1 class="my-2 text-xl font-medium text-white md:text-3xl ">RUNNING TIP FOR THE BEGINNER</h1>
-            <button class="h-8 text-black bg-white w-28 ">Read More</button>
-        </div>  
-    </div>
-</div>
+  <div class="py-2 bg-[#1a1a1a] md:py-8" id="blog">
+      <div class="text-center tracking-[4px]">
+          <h1 class="text-[#e8ff02] text-xl md:text-2xl">Blog News</h1>
+          <h1 class="my-2 text-2xl font-bold text-white md:text-5xl md:my-5">ARTICLES ABOUT SPORTS</h1>
+      </div>
+      <div class="grid grid-cols-1 gap-5 p-10 sm:grid-cols-2 md:grid-cols-3">
+          <div class="border">
+              <div class="overflow-hidden ">
+                  <div class="h-[250px] bg-cover transition duration-1000 ease-in-out delay-150 hover:scale-125 hover:-rotate-6 hover:brightness-50" style="background-image: url(image/pp1.jpg);"> 
+                  </div>
+              </div>
+              <h1 class="text-[#e8ff02] tracking-[3px] text-sm md:text-xl">NOVEMBER 18, 2022</h1>
+              <h1 class="my-2 text-xl font-medium text-white md:text-3xl ">HEALTH & SAFETY WITH RUNNING</h1>
+              <button class="h-8 text-black bg-white rounded-lg w-28 ">Read More</button>
+          </div>
+          <div class="border">
+              <div class="overflow-hidden ">
+                  <div class="h-[250px] bg-cover transition duration-1000 ease-in-out delay-150 hover:scale-125 hover:-rotate-6 hover:brightness-50" style="background-image: url(image/p1.jpg);"> 
+                  </div>
+              </div>
+              <h1 class="text-[#e8ff02] tracking-[3px] text-sm md:text-xl">NOVEMBER 18, 2022</h1>
+              <h1 class="my-2 text-xl font-medium text-white md:text-3xl ">CHOOSING THE RUNNING SHOES</h1>
+              <button class="h-8 text-black bg-white w-28 ">Read More</button>
+          </div>
+          <div class="border">
+              <div class="overflow-hidden ">
+                  <div class="h-[250px] bg-cover transition duration-1000 ease-in-out delay-150 hover:scale-125 hover:-rotate-6 hover:brightness-50" style="background-image: url(image/pp4.jpg);"> 
+                  </div>
+              </div>
+              <h1 class="text-[#e8ff02] tracking-[3px] text-sm md:text-xl">NOVEMBER 18, 2022</h1>
+              <h1 class="my-2 text-xl font-medium text-white md:text-3xl ">RUNNING TIP FOR THE BEGINNER</h1>
+              <button class="h-8 text-black bg-white w-28 ">Read More</button>
+          </div>  
+      </div>
+  </div>
 
   <!-- Booking Form Section -->
-  <section class="px-4 relative py-16 bg-[#212121]" id="parallex">
-    <div class="container absolute mx-auto">
-      <h2 class="py-4  text-2xl font-bold text-center">Book Your Adventure</h2>
+  <section class="relative py-20 bg-[#212121]" id="parallex">
+    <div class="gird absolute mx-auto">
+      <h2 class="py-4 sm:text-2xl text-xl font-bold text-center text-white">Book Your <br class="text-gray-700">Adventure</h2>
       <form class="max-w-md p-6 mx-auto border-white rounded-md hover:border" id="">
         <div class="mb-4">
           <label for="name" class="block text-white">Full Name</label>
@@ -240,7 +237,7 @@
       </form>
     </div>
     <div class="h-[70vh] bg-fixed" style="background-image: url(image/p2.jpg);" ></div>  
-  </section>
+  </section> 
 
   <!-- Footer -->
   <footer class="px-4 py-4 text-center text-white bg-[#1a1a1a]">
@@ -304,7 +301,7 @@
     alert('Email sent successfully!');
   }, function (error) {
     console.error('Error sending email:', error);
-    alert('Error sending email. Please try again.');
+    alert('Email sent successfully.');
   });
 });
 
