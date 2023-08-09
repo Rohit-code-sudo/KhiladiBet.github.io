@@ -1,134 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>~KhiladiBet24*7</title>
-    
-    <style>
-    
-      @keyframes animatedOne{
-      from{
-        background-position: 0 0;
-      }
-      to{
-        background-position: 100% 50%;
-      }
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <link rel="icon" href="./image/pp1.jpg" type="image/icon type">
+  <link href="path/to/tailwind.css" rel="stylesheet">
 </head>
-<body class="">
-  <div class="absolute">
-      <div class="md:w-[100%] lg:md:h-auto sm:h-[400px] container  border-black container relative mb-20" >
-        <div id="mainPic" class="w-[100%] h-auto absolute mb-20">
-         <img src="https://th.bing.com/th/id/OIP.XwL8qZJ1G5LnV4j-jyUZcQHaE8?w=284&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" class="w-[100%] h-auto  " style="z-index: 1;">
-        </div>
-        <div class="relative text-center lg:md:translate-y-56 sm:translate-y-20" style="z-index: 2;">
-          <div class="w-[40px] bg-green-600 h-[40px] z-10 -translate-y-40 rounded-full text-center ">
-            <a href="http://bit.ly/3MdIaYW" class="text-center">
-              <i class="text-4xl text-white fa fa-whatsapp"></i>
-            </a>
+
+<body class="bg-gray-100">
+  <!-- Header -->
+
+    <header class="sticky bg-slate-700">
+      <div class="relative grid px-4 py-4 mx-auto">
+        <nav class="flex justify-center ">  
+          <a href="#" class="text-xl font-bold text-white"></a>
+          <ul class="hidden md:flex md:space-x-4 ">
+            <li><a href="#" class="text-white hover:text-blue-200">Home</a></li>
+            <li><a href="#" class="text-white hover:text-blue-200">Trips</a></li>
+            <li><a href="#" class="text-white hover:text-blue-200">About</a></li>
+            <li><a href="#" class="text-white hover:text-blue-200">Blog</a></li>
+            <li><a href="#" class="text-white hover:text-blue-200">Contact</a></li>
+          </ul>
+          <div class="md:hidden">
+            <button id="menuToggle"  class="text-2xl text-black ">
+              <i class="fa fa-bars"></i>
+            </button>
           </div>
-         
-         <!-- <div class="fixed translate-y-32">
-          <button class=" w-20 bg-[#ffad16] border-2  rounded-3xl hover:bg-[#ff9900] "> <a href="http://bit.ly/3MdIaYW"> New 'Id</a></button>
-         </div> -->
-          <!-- <span class="m-4 md:text-4xl sm:text-2xl font-bold text-[#ff9900]">KHILADI-<b class="text-[#e89700]">BET</b></span>
-          <p class="lg:ml-72 md:ml-36 ml-20 md:text-3xl sm:text-xl font-bold animate-pulse delay-75 text-[#e89700]">24*7</p> -->
-          <div class="relative pt-12 mt-6 text-center md:translate-y-16" style="z-index: -1; border: 0px solid green;">
-            <p class="md:text-[100px] sm:text-5xl  font-bold  " 
-            style="-webkit-text-stroke:2px rgb(87, 63, 1);
-            -webkit-background-clip: text;
-            background-clip: text;
-            background-image: url('dhoni.jpg');
-           
-            color: transparent;
-            animation: animatedOne 10s linear infinite;">KHILADI-BET (24*7)</p>
+        </nav>
+      </div>
+    </header>
 
+  <!-- Hero Section -->
+      <div class=" h-[1000px] md:h-[600px]  relative " >
+        <div class="top-[20%]  pl-3 md:pl-10 absolute " id="landingText">
+            <p class="text-[#ffff33] text-2xl font-medium my-8">our Next Adventure Awaits</p>
+            <h1 class=" text-4xl md:text-6xl text-white font-bold tracking-[]  ">WHAT WE DO IN LIFE ECHOES IN ETERNITY</h1>
+            <p class="my-8 text-white w-72">Explore exciting destinations and book your dream trip today</p>
+            <button class="w-32 h-10 text-white bg-black border-0 border-white hover:border-2 hover:text-black hover:bg-transparent" >Get Started</button>
+            <button  class="w-32 h-10 border-2 border-white hover:bg-black hover:border-0 hover:text-white">Learn More</button>
+        </div> 
+        <div class="h-full bg-fixed bg-cover " style="background-image: url(image/p3.jpg);" ></div>       
+      </div>
+
+      <!---------------------section 3 (about Runner)--------------------------->
+
+      <div class="bg-[#1a1a1a] px-8  md:px-10 py-1">
+        <div class="col-span-3 my-10 text-center text-white " id="programPart1">
+            <p class="text-[#E8FF02] text-md sm:text-xl md:text-2xl tracking-[4px] font-medium">LiVe YoUr LiFe </p>
+            <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold tracking-[5px] ">THE BEST MOVEMENT OF LIFE </h1>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 bg-[#1a1a1a] px-0 md:px-10 py-0 md:py-10 rounded-md" id="programPart2"> 
+            <div class="h-[250px] sm:h-[350px] md:h-[350px] relative ">
+                <div class="absolute px-8 top-10 sm:top-36 md:top-28">
+                    <h1 class="mt-10 text-xl font-bold text-white sm:text-2xl">Enjoy </h1>
+                    <p class="text-md text-[#d9d9d9] py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit elit tellus.</p>
+                    <button class="w-20 h-8 text-white bg-black sm:w-32">Join Now!</button>
+                </div > 
+                <div class="h-full bg-cover rounded-md bg-img" style="background-image:url(image/p8.jpg)" ></div>
+            </div>
+            <div class="h-[250px] sm:h-[350px] md:h-[350px] relative ">
+                <div class="absolute px-8 top-10 sm:top-36 md:top-28 ">
+                    <h1 class="mt-10 text-xl font-bold text-white sm:text-2xl">live your life</h1>
+                    <p class="text-md text-[#d9d9d9] py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit elit tellus.</p>
+                    <button class="w-20 h-8 text-white bg-black sm:w-32">Join Now!</button>
+                </div> 
+                <div class="h-full bg-cover rounded-md bg-img" style="background-image:url(image/p6.jpg)"></div>
+            </div>
+            <div class="h-[250px] sm:h-[350px] md:h-[350px] relative ">
+                <div class="absolute px-8 top-10 sm:top-36 md:top-28">
+                    <h1 class="mt-10 text-xl font-bold text-white sm:text-2xl">live your life</h1>
+                    <p class="text-md text-[#d9d9d9] py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit elit tellus.</p>
+                    <button class="w-20 h-8 text-white bg-black sm:w-32">Join Now!</button>
+                </div> 
+                <div class="h-full bg-cover rounded-md bg-img" style="background-image:url(image/pp5.jpg)"></div>
+            </div>
+        </div>
+    </div>
+    <!------------------section 6 (event page)----------------------------------->
+    
+    <div class="bg-[#1a1a1a] py-16 px-5 md:px-10 h-[1100px] sm:h-[1200px] md:h-[1000px] ">
+      <div class="" id="aboutText">
+          <p class="text-xl font-medium tracking-[6px] text-[#E8FF02]">ABOUT Traveling</p>
+          <h1 class="text-2xl md:text-5xl pr-0 md:pr-5 my-5 font-bold text-white tracking-[5px]  md:w-[60%]"> ADVENTURE LIKE THERE IS NO TOMORROW</h1>
+          <p class="text-md md:text-xl md:w-[60%] md:pr-28 my-5 font-medium text-[#d9d9d9]">YOU CAN RUN FAST, JUMP HIGH OR LIFT HEAVY WEIGHTS BUT IF YOUR BAD HABITS ARE HOLDING YOU BACK THEN ALL OF THIS WILL BE POINTLESS!</p>
+          <button class="w-28 h-10 my-10 font-medium text-white bg-green-500 rounded-lg  hover:bg-[#1a1a1a] hover:text-white hover:border-2 border-white transition ease-in-out delay-150">Read More</button>
+      </div>
+      <div class="w-[100%] md:w-[50%] sm:h-[400px] md:h-[380px] lg:h-[420px] border-0 border-white relative float-left" id="aboutTextImg1">
+          <p class="absolute px-12 text-3xl font-bold text-center text-transparent top-20 md:top-32 sm:text-5xl md:text-6xl" id="transparent">&nbsp;  LEVEL UP YOUR GAME</p>
+          <img src="image/p7.jpg" alt="" class="w-[100%] rounded-xl brightness-115 h-[100%]">
+      </div>
+      <div class="w-[100%] h-[300px] md:w-[50%] md:h-[300px] rounded-xl lg:h-[300px] bg-[#E8FF02] float-left md:float-right md:translate-y-12 md:-translate-x-12 md:px-5" id="aboutTextImg2">
+          <div class=" sm:grid grid-cols-2 h-[50%] ">
+              <p class="text-2xl font-bold ">OUR VISION</p>
+              <p class="mt-0 sm:mt-0">Integer id suscipit felis, vel efficitur leo. Phasellus ultrices, quam eu feugiat ultrices, mi lacus facilisis nulla laoreet.</p>
+          </div><hr class="border-black border-1 "> 
+          <div class="  sm:grid grid-cols-2 h-[50%] ">
+              <p class="text-2xl font-bold ">OUR MISSION</p>
+              <p class="mt-0 sm:mt-0">Nullam nec dignissim risus. Duis at lorem in sem luctus faucibus. Mauris finibus vestibulum felis, non aliquam neque.</p>
           </div>
-          <marquee behavior="" direction="right" class="  md:text-5xl sm:text-2xl pb-4 font-bold text-[orange] md:translate-y-32" style="z-index: 0;"> Indias Biggest Online KHILADI-BET (24*7)</marquee>
-          <center class="animate-pulse"> <button class="md:w-32 md:h-10 w-24 mt-2 md:text-2xl sm:text-xl text-white bg-[#ffad16] hover:bg-[#c88d0e] border-2 rounded-3xl hover:shadow-2xl hover:border-[orange]"><a href="https://wa.me/message/CJZETGEOVYKFD1 ">Get ID </a></button> </center>                
-        </div>
-      </div> 
+      </div>
+  </div>  
+
+  <!-- Trip Listing Section -->
+  <div class=" text-white relative h-[1000px] sm:h-[800px] md:h-[550px] " id="parallex1" > 
     
-
-    
-    <!-- -------------------landing-------- -->
-
-    <div class="md:h-[200px]  w-[100%] z-10 lg:mt-[750px] md:mt-[400px]" style="z-index: initial;">
-        <img src="9.png" class="w-[100%] h-[100%] ">
+    <div class="h-full bg-fixed bg-black bg-cover " style="background-image:url(image/pp1.jpg);">
     </div>
-    <div class="w-[100%] h-[100%] container grid lg:grid-cols-2 sm:grid-cols-1 p-2 ">
-        <div class="h-auto px-20 border-black">
-            <img src="https://img.freepik.com/premium-vector/abstract-batsman-playing-cricket-from-splash-watercolors-illustration-paints_291138-405.jpg?w=740" alt="" class="w-[100%] h-[100%]">
+
+</div>
+
+
+  <section id="trips" class="px-4 py-16 bg-[#1a1a1a]">
+    <div class="container mx-auto">
+      <h2 class="mb-8 text-2xl font-bold">Adventure Trips</h2>
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
+        <!-- Sample trip cards, you can loop through actual trip data -->
+        <div class="p-1 bg-current rounded shadow-lg" id="programPart2">
+          <img src="image/pp3.jpg" alt="Trip Image" class="object-cover w-full h-40 mb-4 rounded">
+          <h3 class="mb-2 text-lg font-bold">Adventure Trip 1</h3>
+          <p class="mb-4 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="block font-bold text-blue-500">Learn More</a>
         </div>
-        <div class="h-auto ">
-            <p class="lg:mt-10 p-4 scroll-pt-16 md:pt-16 sm:pt-2 cursor-pointer lg:text-xl text-xs lg:leading-[20px] pr-28 " >Welcome to <span class="md:text-2xl sm:xl font-bold text-[orange]">INDIA'S GREATEST BOOK
-                  KHILADI BET</span> Website is one of the best online book ID store with all types of exchanges
-                   and multiple options. Here, you can get  your ID within 59 seconds.
-            </p><br>
-            <button class="w-30 h-7 my-4 ml-10  px-1  bg-[orange] hover:shadow-black shadow-2xl rounded-3xl"><a href="https://d247.com"> Demo Id</a></button>             	
-            <button class="w-30 h-7 ml-6 px-1 bg-[orange] hover:shadow-black shadow-2xl rounded-3xl"><a href="http://bit.ly/3MdIaYW">Get ID Now</a></button>
+        <div class="p-1 bg-current rounded shadow-lg" id="img">
+          <img src="image/p2.jpg" alt="Trip Image" class="object-cover w-full h-40 mb-4 rounded">
+          <h3 class="mb-2 text-lg font-bold">Adventure Trip 2</h3>
+          <p class="mb-4 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="block font-bold text-blue-500">Learn More</a>
         </div>
+        <div class="p-1 bg-current rounded shadow-lg " id="parallex1">
+          <img src="image/p9.jpg" alt="Trip Image" class="object-cover w-full h-40 mb-4 rounded">
+          <h3 class="mb-2 text-lg font-bold">Adventure Trip 3</h3>
+          <p class="mb-4 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="block font-bold text-blue-500">Learn More</a>
+        </div>
+      </div>
     </div>
-    <!-- <div class=" w-[100%] h-auto container  p-2 hover:p-0 ">
-        <img src="./4.png" alt="" class="w-[100%] h-[100%]">
-    </div> -->
-   
-    <div class="w-[100%] h-auto container hover:p-0">
-      <img src="./7.png" alt="" class="w-[100%] h-auto">
-    </div>
-    <div class=" w-[100%] container h-auto hover:p-0">
-        <img src="./6.png" alt="" class="w-[100%] h-[100%]">
-    </div>
-    <div class="container h-auto  hover:p-0">
-        <img src="5.png" class="w-[100%] h-auto">
-    </div>
+  </section>
 
-    <div class="grid lg:grid-cols-3 sm:grid-cols-1 " >
-      <div class=" h-[500px]">
-        <img src="./virat3.jpg" class="w-[100%] h-[100%]">
-      </div>
-      <div class="h-[500px]">
-        <img src="./rohit.jpg" class="w-[100%] h-[100%]">
-      </div>
-      <div class=" h-[500px]">
-        <img src="./dhoni2.jpg" class="w-[100%] h-[100%]">
-      </div>
-  </div>
-    <div class="grid lg:grid-cols-2 md:grid-cols-1 md:p-10 md:gap-4 sm:gap-2 sm:p-2 gap-0 ">
-      <div class=" border-black ">
-        <iframe class="md:w-[600px] sm:w-[275px] md:h-[315px] sm:h-[200px]" src="https://www.youtube.com/embed/maDAMuWVq6g?controls=0&amp;start=10"  allow="autoplay; muted;  picture-in-picture; " allowfullscreen></iframe>
-      </div>
-      <div class=" border-black">
-        <iframe class="md:w-[600px] sm:w-[275px] md:h-[315px] sm:h-[200px]" src="https://www.youtube.com/embed/aqhBzO2ZsiE?controls=0&amp;start=20"  allow=" autoplay; muted; picture-in-picture; " allowfullscreen></iframe>
-      </div>
+<!-- ----------------blog------------- -->
+  <div class="relative" id="parallex2">
+    <div class="absolute grid content-center w-full h-full grid-cols-1 bg-slate-800/70 opacity-80 md:grid-cols-2">
+        <div class="">
+            <h1 class="text-2xl font-bold text-center text-black md:text-4xl ">LET'S DO THE RUN TOGETHER!</h1>
+        </div>
+        <div class="grid justify-center px-10 py-10 md:py-0">
+            <button class="w-32 h-10 text-white bg-black border rounded-xl hover:border-red-500 ">SignUp Now</button>
+        </div> 
     </div>
-    <!-- -------------------footer-------- -->
-    <div class="bg-[lightgray] container mt-2 px-10 pt-3 hover:shadow-2xl rounded-md h-auto" >
-        
-            <div class="gap-8 md:grid-cols-3 sm:grid sm:gap-0">
-               <div class="mx-2">
-                <p class="font-serif border-r-2 border-black md:text-xl sm:text-xs">24x7 Customer Support<br>
-                    We believe in keeping our clients fully satisfied by providing top-notch customer support.</p>
-               </div>
-                
-                <div class="flex m-1 border-r-2 border-black">
-                    <p class="font-semibold ">Contact Us Social Media</p>
-                    <div class="m-1" ><i class="text-blue-900 fa fa-facebook" aria-hidden="true"> </i></div>
-                    <div class="m-1"><i class="text-blue-800 fa fa-twitter" aria-hidden="true"></i></div>
-                    <div class="m-1"><i class="text-red-800 fa fa-instagram" aria-hidden="true"></i></div>
-                  </div>
-                <div class="float-right p-2 ">
-                    <h3 class="md:text-xl sm:text-xs">Copyright © 2012 | KHILADI~24*7 | All rights reserved | Powered by ~KhiladiBet247*</h3>
+    <div class="h-56 bg-fixed" style="background-image: url(image/pp6.jpg);" ></div>      
+</div>
+
+<div class="py-2 bg-black md:py-8" id="blog">
+    <div class="text-center tracking-[4px]">
+        <h1 class="text-[#e8ff02] text-xl md:text-2xl">Blog News</h1>
+        <h1 class="my-2 text-2xl font-bold text-white md:text-5xl md:my-5">ARTICLES ABOUT SPORTS</h1>
+    </div>
+    <div class="grid grid-cols-1 gap-5 p-10 sm:grid-cols-2 md:grid-cols-3">
+        <div class="">
+            <div class="overflow-hidden ">
+                <div class="h-[250px] bg-cover transition duration-1000 ease-in-out delay-150 hover:scale-125 hover:-rotate-6 hover:brightness-50" style="background-image: url(image/pp1.jpg);"> 
                 </div>
             </div>
-        
-         <marquee  direction="right"> <i><h4 class="text-2xl font-bold text-orange-700 animate-pulse">Disclaimer:- This Website is only for 18+ users. If you are from Telangana, Orissa, Assam, Sikkim, 
-                      and Nagaland Please leave the website immediately. Be aware of fraudsters, we only deal via WhatsApp. No Real Money Involvement</h4></i></marquee>
-    </div>    
-    </body>
+            <h1 class="text-[#e8ff02] tracking-[3px] text-sm md:text-xl">NOVEMBER 18, 2022</h1>
+            <h1 class="my-2 text-xl font-medium text-white md:text-3xl ">HEALTH & SAFETY WITH RUNNING</h1>
+            <button class="h-8 text-black bg-white rounded-lg w-28 ">Read More</button>
+        </div>
+        <div class="">
+            <div class="overflow-hidden ">
+                <div class="h-[250px] bg-cover transition duration-1000 ease-in-out delay-150 hover:scale-125 hover:-rotate-6 hover:brightness-50" style="background-image: url(image/p1.jpg);"> 
+                </div>
+            </div>
+            <h1 class="text-[#e8ff02] tracking-[3px] text-sm md:text-xl">NOVEMBER 18, 2022</h1>
+            <h1 class="my-2 text-xl font-medium text-white md:text-3xl ">CHOOSING THE RUNNING SHOES</h1>
+            <button class="h-8 text-black bg-white w-28 ">Read More</button>
+        </div>
+        <div class="">
+            <div class="overflow-hidden ">
+                <div class="h-[250px] bg-cover transition duration-1000 ease-in-out delay-150 hover:scale-125 hover:-rotate-6 hover:brightness-50" style="background-image: url(image/pp4.jpg);"> 
+                </div>
+            </div>
+            <h1 class="text-[#e8ff02] tracking-[3px] text-sm md:text-xl">NOVEMBER 18, 2022</h1>
+            <h1 class="my-2 text-xl font-medium text-white md:text-3xl ">RUNNING TIP FOR THE BEGINNER</h1>
+            <button class="h-8 text-black bg-white w-28 ">Read More</button>
+        </div>  
+    </div>
+</div>
+
+  <!-- Booking Form Section -->
+  <section class="px-4 relative py-16 bg-[#212121]" id="parallex">
+    <div class="container absolute mx-auto">
+      <h2 class="py-4  text-2xl font-bold text-center">Book Your Adventure</h2>
+      <form class="max-w-md p-6 mx-auto border-white rounded-md hover:border" id="">
+        <div class="mb-4">
+          <label for="name" class="block text-white">Full Name</label>
+          <input type="text" id="name" name="name" class="w-full p-1.5 border border-gray-300 rounded focus:outline-none">
+        </div>
+        <div class="mb-4">
+          <label for="mobile" class="block text-white">Mobile</label>
+          <input type="tel" id="mobile" name="mobile" class="w-full p-1.5 border border-gray-300 rounded focus:outline-none">
+        </div>
+        <div class="mb-4">
+          <label for="date" class="block text-white">Date</label>
+          <input type="date" id="date" name="date" class="w-full p-1.5 border border-gray-300 rounded focus:outline-none">
+        </div>
+        <div class="mb-4">
+          <label for="toTrip" class="block text-white">To Trip</label>
+          <select id="toTrip" name="toTrip" class="w-full p-1.5 border border-gray-300 rounded focus:outline-none">
+            <option value="">select</option>
+            <option value="pipariya">pipariya</option>
+            <option value="Naramdapuram">Naramda puram</option>
+            <option value="bhopal">bhopal</option>
+            <option value="Madhai">Madhai</option>
+            <option value="indore">indore</option>
+            <option value="omkareshawar">omkareshawar</option>
+            <option value="ujjain">ujjain</option>
+            <option value="Pachamadhi">Pachamadhi</option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <label for="fromTrip" class="block text-white">From Trip</label>
+          <select id="fromTrip" name="fromTrip" class="w-full p-1.5 border border-gray-300 rounded focus:outline-none">
+            <option value="">select</option>
+            <option value="pipariya">pipariya</option>
+            <option value="Naramdapuram">Naramda puram</option>
+            <option value="bhopal">bhopal</option>
+            <option value="Madhai">Madhai</option>
+            <option value="indore">indore</option>
+            <option value="omkareshawar">omkareshawar</option>
+            <option value="ujjain">ujjain</option>
+            <option value="Pachamadhi">Pachamadhi</option>
+          </select>
+        </div>
+        <button type="button" id="bookButton" class="px-4 py-2 font-bold text-center text-white bg-yellow-500 right-full rounded-xl hover:bg-yellow-600">Book Now</button>
+      </form>
+    </div>
+    <div class="h-[70vh] bg-fixed" style="background-image: url(image/p2.jpg);" ></div>  
+  </section>
+
+  <!-- Footer -->
+  <footer class="px-4 py-4 text-center text-white bg-[#1a1a1a]">
+    <div class="justify-center px-10 py-1 md:flex md:py-2 ">
+       <p>&copy; 2023 Adventure Travel. All rights reserved.</p>
+      <h1 class="px-10 hover:text-[#E8FF02] text-xs md:text-sm">Privacy Policy</h1>
+      <h1 class="hover:text-[#E8FF02] text-xs md:text-sm  ">Terms & conditions</h1>
+  </div> 
+  </footer>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="index.js"></script> 
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const menuList = document.querySelector('ul');
+  
+    menuToggle.addEventListener('click', () => {
+      menuList.classList.toggle('hidden');
+    });
+
+
+  const bookButton = document.getElementById('bookButton');
+  // const bookingForm = document.getElementById('bookingForm');
+
+  // bookButton.addEventListener('click', () => {
+  //   const name = document.getElementById('name').value;
+  //   const mobile = document.getElementById('mobile').value;
+  //   const date = document.getElementById('date').value;
+  //   const toTrip = document.getElementById('toTrip').value;
+  //   const fromTrip = document.getElementById('fromTrip').value;
+
+
+  //   const emailBody = `New Booking Details:\nName: ${name}\nMobile: ${mobile}\ndate: ${date}\nTo Trip: ${toTrip}\nFrom Trip: ${fromTrip}`;
+
+  //   sendEmail('rp750947@gmail.com', 'New Booking', emailBody);
+
+  //   alert('Booking submitted successfully!');
+  //   bookingForm.reset();
+  // });
+
+  bookButton.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const mobile = document.getElementById('mobile').value;
+  const date = document.getElementById('date').value;
+  const toTrip = document.getElementById('toTrip').value;
+  const fromTrip = document.getElementById('fromTrip').value;
+
+  const emailBody = `New Booking Details:\nName: ${name}\nMobile: ${mobile}\ndate: ${date}\nTo Trip: ${toTrip}\nFrom Trip: ${fromTrip}`;
+
+
+  // emailjs.init('https://dashboard.emailjs.com/confirm-email/MzkyMTky/FlrKKw3kUE');
+
+  emailjs.send('service_alu9p9e', 'template_3pmso1r', {
+    to_email: mobile,
+    subject: emailBody,
+    message: name,
+  }).then(function (response) {
+    console.log('Email sent:', response);
+    alert('Email sent successfully!');
+  }, function (error) {
+    console.error('Error sending email:', error);
+    alert('Error sending email. Please try again.');
+  });
+});
+
+
+  </script>
+</body>
+
 </html>
