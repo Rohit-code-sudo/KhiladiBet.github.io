@@ -49,10 +49,10 @@
             <p class="text-[#ffff33] text-2xl md:text-4xl font-medium my-2 md:my-8">our Next Adventure Awaits</p>
             <h1 class=" sm:text-4xl text-2xl md:text-6xl text-white font-bold tracking-[]  ">WHAT WE DO IN LIFE ECHOES IN ETERNITY</h1>
             <p class="text-white md:my-8">Explore exciting destinations and book your dream trip today</p>
-            <div class="md:flex justify-around pt-8 pluse">
-              <button class="w-32 h-10 text-black bg-[#e8ff02] border-0 border-white rounded-lg hover:rounded-xl hover:border-2 hover:text-white hover:bg-transparent" >Get Started</button>
-              <button  class="w-32 h-10 text-black bg-[#e8ff02] border border-white rounded-lg hover:border-2 hover:bg-transparent hover:rounded-xl hover:text-white">Learn More</button>
-              <button class="w-40 h-10 text-black bg-[#e8ff02] border border-white rounded-lg hover:border-2 hover:bg-transparent hover:rounded-xl hover:text-white">
+            <div class="sm:flex justify-around pt-8 gap-2  pluse">
+              <button class="w-32 h-10 text-black bg-[#e8ff02] my-1 border-0 border-white rounded-lg hover:rounded-xl hover:border-2 hover:text-white hover:bg-transparent" >Get Started</button>
+              <button  class="w-32 h-10 text-black bg-[#e8ff02] my-1 border border-white rounded-lg hover:border-2 hover:bg-transparent hover:rounded-xl hover:text-white">Learn More</button>
+              <button class="w-40 h-10 text-black bg-[#e8ff02] my-1 border border-white rounded-lg hover:border-2 hover:bg-transparent hover:rounded-xl hover:text-white">
                 <a href="#"><i  class="gap-10 text-xl rounded-lg fa fa-whatsapp text-green-800 bg-transparent" aria-hidden="true"> </i>&nbsp;&nbsp; Join-Whatsapp </a>
               </button>
             </div>
@@ -180,7 +180,7 @@
             <button class="w-32 h-10 text-white bg-[#e8ff02] hover:transparent border rounded-xl hover:border-red-500 ">SignUp Now</button>
         </div> 
     </div>
-    <div class="bg-fixed h-60" style="background-image: url(image/pp6.jpg);" ></div>      
+    <div class="bg-fixed h-60" style="background-image: url(image/pp6.jpg);"></div>      
   </div> 
 
   <div class="py-2 bg-[#1a1a1a] md:py-8" id="blog">
@@ -220,10 +220,10 @@
   </div>
 
   <!-- Booking Form Section -->
-  <section class="relative justify-center py-5  mx-auto  bg-[#212121]" id="parallex">
-    <div class="absolute grid grid-cols-1  md:grid-cols-3">
-      <div class="grid w-[130%] "></div>
-      <div class="gird md:w-[130%] mx-auto text-center justify-center ">
+  <section class=" justify-center py-5  mx-auto  bg-[#212121]" id="parallex">
+    <div class=" grid grid-cols-1  md:grid-cols-3">
+      <div class="grid w-full "></div>
+      <div class="gird md:w-[110%] mx-auto text-center justify-center ">
         <h2 class="py-2 text-xl font-bold text-center text-white animation-pluse sm:text-2xl">Book Your <br class="text-gray-700">Adventure</h2>
         <form class="p-6 mb-8 mx-auto " onsubmit="sandEmail(); return false;">
           <div class="mb-4">
@@ -241,7 +241,8 @@
           <div class="mb-4">
             <label for="toTrip" class="block text-white">To Trip</label>
             <select id="toTrip" name="toTrip" class="w-full p-1.5 border border-gray-300 rounded focus:outline-none">
-              <option value="">select</option>
+              <option value="" type="text">select</option>
+              
               <option value="pipariya">pipariya</option>
               <option value="Naramdapuram">Naramda puram</option>
               <option value="bhopal">bhopal</option>
@@ -266,28 +267,30 @@
               <option value="Pachamadhi">Pachamadhi</option>
             </select>
           </div>
-          <button type="submit" id="bookButton" class="px-4 py-2 font-bold text-center text-white bg-[#e8ff02] right-full rounded-xl hover:bg-[#e8ff01]"
+          <button type="submit" id="bookButton" class="px-4 py-2 font-bold text-center text-black bg-[#e8ff02] right-full rounded-xl hover:bg-[#e8ff01] hover:text-white "
           >Book Now</button>
         </form>
       </div>
       <div class="grid w-full"></div>
     </div>  
-    <div class="h-[70vh] bg-fixed" style="background-image: url(image/p2.jpg);" ></div>
+    <!-- <div class="h-[70vh] bg-fixed" style="background-image: url(image/p2.jpg);" ></div> -->
   </section> 
 
   <!-- Footer -->
-  <footer class="px-4 py-4 md:mt-32 text-center text-white bg-[#1a1a1a]">
-    <div class="my-1 border-r-2 border-black ">
+  <footer class="px-4 py-4 text-center text-white bg-[#1a1a1a]">
+    <div class="my-1 border-r-2 border-black">
         <p class="font-semibold ">Contact Us Social Media</p>
                             
-        <span class="heading">User Rating</span>
-        <span class="text-white fa fa-star checked"></span>
-        <span class="text-white fa fa-star checked"></span>
-        <span class="text-white fa fa-star checked"></span>
-        <span class="text-white fa fa-star checked"></span>
-        <span class="text-white fa fa-star"></span>
+        <div class="my-2">
+          <span class="heading  ">User Rating</span>
+          <span class="text-white px-2 fa fa-star checked mouse cursor"></span>
+          <span class="text-white px-2 fa fa-star checked"></span>
+          <span class="text-white px-2 fa fa-star checked"></span>
+          <span class="text-white px-2 fa fa-star checked"></span>
+          <span class="text-white px-2 fa fa-star"></span>
+        </div>
         <p>4.1 average based on 254 reviews.</p>
-        <div class="sm:flex text-center justify-center text-2xl">
+        <div class="sm:flex my-2 text-center justify-center text-2xl">
           <div class="m-1" ><i class="text-blue-900 fa fa-facebook" aria-hidden="true"> </i></div>
           <div class="m-1"><i class="text-blue-800 fa fa-twitter" aria-hidden="true"></i></div>
           <div class="m-1"><i class="text-red-800 fa fa-instagram" aria-hidden="true"></i></div>
@@ -301,9 +304,10 @@
       <h1 class="hover:text-[#E8FF02] text-xs md:text-sm  ">Terms & conditions</h1>
     </div> 
   </footer>
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  
   <script src="index.js"></script> 
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
     const menuToggle = document.getElementById('menuToggle');
     const menuList = document.querySelector('ul');
@@ -363,7 +367,7 @@ function sandEmail(){
         Email.send({
         Host : "smtp.elasticemail.com",
         Username : "rp750947@gmail.com",
-        Password : "Rohit@7828",
+        Password : "1cd59c54-f934-4378-899c-8c18eca10161",
         // To : document.getElementById('email').value,
         To : "rp750947@gmail.com",
         From :document.getElementById("email").value,
@@ -377,8 +381,12 @@ function sandEmail(){
          + document.getElementById('fromTrip').value + "<br> <p class='text-3xl'>Time</p><br> From " 
          + document.getElementById('countries').value + "  To india  " 
         //  + document.getElementById('times').value,
+        
 
-})}
+        }).then(
+  message => alert("booking successfull")
+  );
+}
   </script>
 </body>
 
